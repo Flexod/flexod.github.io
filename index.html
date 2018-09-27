@@ -5,6 +5,30 @@
    <title>Моё резюме</title>
       </head>
   <body>
+    <script>
+    'use strict';
+    var userlogin = prompt('Введите логин', '');
+
+    if (userlogin == 'Admin') {
+
+      var password = prompt('Введите пароль', '');
+
+      if (password == 'Чёрный Властелин') {
+        alert("Оууу маай!");
+      } else if (password == null) {
+        alert("Вход отменен");
+      } else {
+        alert("Пароль не катит");
+      }
+
+    } else if (userlogin == null) {
+      alert('Вход отменен');
+
+    } else {
+
+      alert('Пошел нахуй');
+    }
+  </script>
     <div id="header">
     <h1>Давид Ткач</h1>
     <h3>Веб-разработчик</h3>
